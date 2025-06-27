@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>cs基礎実習のチームワーク課題です</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+  </head>
+  <body>
+    <h1>This website verifies that you are not a robot.</h1>
+    <h2>Language settings</h2>
+    <ul>
+      <li>Chinese</li>
+      <li><a href="index.html">Japanese</a></li>
+    </ul>
+    <p><strong>You can go to the nth image.</strong></p>
+    <ul id="menu">
+      <li><a href="#1maime">1st photo</a></li>
+      <li><a href="#2maime">2nd photo</a></li>
+      <li><a href="#3maime">3rd photo</a></li>
+      <li><a href="#4maime">4th photo</a></li>
+    </ul>
+    <h3>Choose what the image below represents.</h3>
+    <!-- ここから１つの form にまとめる -->
+    <form action="http://127.0.0.1:3000/answer.html" method="get">
+      <!-- 1枚目 -->
+      <section id="1maime">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcjL_YeC7sQmBJLMsxje6N_itpSGTHSbu0jszUVkIe3qR2gzzof4w08-ljFHPb04MlXQPeYmsUF_fkgO5990ixg6xZbc0tUGaDZ6zYL5fcTXczeoyWj4-RzZVUW-yI_86qMKHVO6yNnOb1KKeQ6f-FPg3EJaaILkKXnm7dl72zugS1GBRcY4djKgwgVRQg/s886/animalhealth_niwatori_byouki.png" alt="病気のニワトリ">
+        <p class="1">This is an example, so if you don't understand this, there is a good chance that you are not human.</p>
+        <label for="answer1">What is this?</label>
+        <input type="text" id="answer1" name="answer1">
+      </section>
+      <br>
+      <!-- 2枚目 -->
+      <section id="2maime">
+        <img src="https://cdn.pixabay.com/photo/2015/09/09/07/05/japan-931162_1280.jpg" alt="どこかの電車">
+        <label for="answer2">What line is this train and what section does it run on?</label>
+        <input type="text" id="answer2" name="answer2">
+      </section>
+      <br>
+      <!-- 3枚目 -->
+      <section id="3maime">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhK_JxLwYTHBfzUG0WwwNavvYyM4i9mbQq22-ZAvQOTLAAOCxIdL_xaEGqFQN1p3hbpada3kiCDMQ9mFWBKvMqIf6fnoG6Ix8mnCLhWOBZuOJqfmgeB2ptWHVRebH4S7CtEtSvObJcv2SqSMQ5F6QNTyiu3kusPtiKYTjYsaPv82KNT4_fA-uT9klYs0tLk/s450/animalhealth_doctor_sangyou_juui_man.png" alt="YAJU&U">
+        <p>This person is:
+          <select name="answer3" id="answer3">
+            <option value="">Please choose</option>
+            <option value="男性">male</option>
+            <option value="女性">female</option>
+            <option value="時代によって配慮する">Consider the times.</option>
+            <option value="一概に決まらない">It is not clear.</option>
+          </select>
+        </p>
+      </section>
+      <br>
+      <!-- 4枚目 -->
+      <section id="4maime">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-aKq2vkVhpllMUoitW-ZV06j4p5lTn_owxOZOUKk2s9UrNyCCjGFWcXMrCM3enmjaV-9QDjoc3rcYTXluVrq4LQ2So_JdSQkaaoELPiqXYXWwA5fhiHrS2czEDO2H09IXBwb0Gc0N97EM/s514/food_fried_onion.png" alt="フライドオニオン">
+        <label for="answer4">What is this?</label>
+        <input type="text" id="4maime" name="answer4">
+      </section>
+      <br>
+      <!-- 提出ボタン -->
+      <div style="text-align:center; margin-top:20px;">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+    <!-- ここまで form -->
+  </body>
+</html>
