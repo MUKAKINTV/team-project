@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <title>CS基础实习的团队合作任务</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+  </head>
+  <body>
+    <h1>本网站用于证明您不是机器人</h1>
+    <h2>语言设置</h2>
+    <ul>
+      <li><a href="index.html">日语</a></li>
+      <li>英语</li>
+    </ul>
+    <p><strong>可以跳转到第 n 张图片</strong></p>
+    <ul id="menu">
+      <li><a href="#1maime">第 1 张</a></li>
+      <li><a href="#2maime">第 2 张</a></li>
+      <li><a href="#3maime">第 3 张</a></li>
+      <li><a href="#4maime">第 4 张</a></li>
+    </ul>
+    <h3>请选择下面的图片代表的含义：</h3>
+
+    <form action="http://127.0.0.1:3000/answer.html" method="get">
+      <!-- 第1张 -->
+      <section id="1maime">
+        <img
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcjL_YeC7sQmBJLMsxje6N_itpSGTHSbu0jszUVkIe3qR2gzzof4w08-ljFHPb04MlXQPeYmsUF_fkgO5990ixg6xZbc0tUGaDZ6zYL5fcTXczeoyWj4-RzZVUW-yI_86qMKHVO6yNnOb1KKeQ6f-FPg3EJaaILkKXnm7dl72zugS1GBRcY4djKgwgVRQg/s886/animalhealth_niwatori_byouki.png"
+          alt="病鸡">
+        <p class="1">这是示例题，若不会此题，则可能真的"不是人"了……</p>
+        <label for="answer1">这是什么？</label>
+        <input type="text" id="answer1" name="answer1">
+      </section>
+      <br>
+
+      <!-- 第2张 -->
+      <section id="2maime">
+        <img
+          src="https://cdn.pixabay.com/photo/2015/09/09/07/05/japan-931162_1280.jpg"
+          alt="某地电车">
+        <label for="answer2">请问这列电车属于哪个系列，行驶于哪个区间？</label>
+        <input type="text" id="answer2" name="answer2">
+      </section>
+      <br>
+
+      <!-- 第3张 -->
+      <section id="3maime">
+        <img
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhK_JxLwYTHBfzUG0WwwNavvYyM4i9mbQq22-ZAvQOTLAAOCxIdL_xaEGqFQN1p3hbpada3kiCDMQ9mFWBKvMqIf6fnoG6Ix8mnCLhWOBZuOJqfmgeB2ptWHVRebH4S7CtEtSvObJcv2SqSMQ5F6QNTyiu3kusPtiKYTjYsaPv82KNT4_fA-uT9klYs0tLk/s450/animalhealth_doctor_sangyou_juui_man.png"
+          alt="兽医或医生">
+        <p>此人是：
+          <select name="answer3" id="answer3">
+            <option value="">请选择</option>
+            <option value="男性">男性</option>
+            <option value="女性">女性</option>
+            <option value="需根据时代考虑">需根据时代考虑</option>
+            <option value="无法一概而论">无法一概而论</option>
+          </select>
+        </p>
+      </section>
+      <br>
+
+      <!-- 第4张 -->
+      <section id="4maime">
+        <img
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-aKq2vkVhpllMUoitW-ZV06j4p5lTn_owxOZOUKk2s9UrNyCCjGFWcXMrCM3enmjaV-9QDjoc3rcYTXluVrq4LQ2So_JdSQkaaoELPiqXYXWwA5fhiHrS2czEDO2H09IXBwb0Gc0N97EM/s514/food_fried_onion.png"
+          alt="炸洋葱圈">
+        <label for="answer4">这是什么？</label>
+        <input type="text" id="answer4" name="answer4">
+      </section>
+      <br>
+
+      <!-- 提交按钮 -->
+      <div style="text-align:center; margin-top:20px;">
+        <input type="submit" value="提交">
+      </div>
+    </form>
+
+  </body>
+</html>
