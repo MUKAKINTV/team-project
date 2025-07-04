@@ -6,3 +6,11 @@ img {
 body {
     background-color: rgba(238, 250, 215, 0.719);
 }
+
+p {
+    font-weight: bold;
+}
+
+label {
+    font-weight: bold;
+}
